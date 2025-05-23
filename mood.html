@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Pick a Mood</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/moodstyle.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!--
+      The body includes the content you see in the page
+      Each element is defined using tags, like this <div></div>
+      The attributes like class="wrapper" let us style elements in the CSS
+    -->
+    <div class="wrapper">
+      <header class="header"></header>
+      <div class="content" role="main">
+        <h1
+          style="
+            color: #000000;
+            font-family: Bebas Neue, sans-serif;
+            font-weight: 400;
+            color: #000;
+            background-color: #fff;
+            border: 8px solid #fff;
+          "
+        >
+          Pick a Mood!
+        </h1>
+        <div class="row">
+          <!--         Red mood -->
+          <a href="red.html">
+            <button id="red">
+              <input
+                type="image"
+                id="red2"
+                src="https://cdn.glitch.global/5139fc08-2220-4f0b-a13d-59e88d5249f6/red.png?v=1705380956207"
+                width="200"
+                height="200"
+              />
+            </button>
+          </a>
+          <!--         Yellow mood -->
+          <a href="yellow.html">
+            <button id="yellow">
+              <input
+                type="image"
+                id="yellow2"
+                src="https://cdn.glitch.global/5139fc08-2220-4f0b-a13d-59e88d5249f6/yellow.jpg?v=1705381795467"
+                width="200"
+                height="200"
+              />
+            </button>
+          </a>
+        </div>
+        <div class="row">
+          <!--         Green mood -->
+          <a href="green.html">
+            <button id="green">
+              <input
+                type="image"
+                id="green2"
+                src="https://cdn.glitch.global/5139fc08-2220-4f0b-a13d-59e88d5249f6/pexels-sam-diederichs-3772631.jpg?v=1705381657111"
+                width="200"
+                height="200"
+              />
+            </button>
+            <!--           Blue mood -->
+          </a>
+          <a href="blue.html">
+            <button id="blue">
+              <input
+                type="image"
+                id="blue2"
+                src="https://cdn.glitch.global/5139fc08-2220-4f0b-a13d-59e88d5249f6/blue.png?v=1705380953724"
+                width="200"
+                height="200"
+              />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+    <footer class="footer"></footer>
+    <a href="index.html"> <button>Back</button></a>
+  </body>
+</html>

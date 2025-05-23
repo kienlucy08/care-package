@@ -1,0 +1,221 @@
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #a7d4a1;
+  --color-text-main: #335915;
+  --color-primary: #335915;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "Lilita One", sans-serif;
+  --font-family-header: "Lilita One", sans-serif;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.row iframe {
+  align-self: flex-start;
+  padding: 0rem 5rem;
+  display: flex;
+}
+
+/* Navigation grid */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #a7d4a1;
+}
+
+.header a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: "Lilita One", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #a7d4a1;
+  text-decoration: none;
+  border-style: none;
+  background-color: #a7d4a1;
+}
+.header a:hover {
+  background: var(--color-primary);
+}
+
+.header .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+/* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #a7d4a1;
+}
+
+.footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: "Lilita One", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #bcf78f;
+  text-decoration: none;
+  border-style: none;
+}
+.footer a:hover {
+  background: var(--color-primary);
+}
+
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: "Lilita One", sans-serif;
+  background-color: var(--color-bg);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url("https://freerangestock.com/sample/120638/green-paint-abstract-texture.jpg");
+  margin-left: 20px;
+  text-align: left;
+}
+
+/* /font style */
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 10px solid #a7d4a1;
+  border-radius: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Very light scaling for our illustration */
+.title {
+  color: #a7d4a1;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+  margin: 0;
+}
+
+/* Very light scaling for our illustration */
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: var(--image-margin);
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #a7d4a1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 0.5rem;
+  transition: 500ms;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: normal;
+}
+
+h1 {
+  color: #a7d4a1;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+}
+
+/* Subheading */
+h2 {
+  color: #a7d4a1;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  color: #a7d4a1;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 200;
+}
+
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+.dipped {
+  transform: translateY(5px);
+}
+
+/* Links that open files in the editor */
+.fileopener {
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 3px solid var(--color-primary);
+  color: var(--color-secondary);
+}
+.fileopener:hover {
+  border-bottom: 3px solid var(--color-secondary);
+}
